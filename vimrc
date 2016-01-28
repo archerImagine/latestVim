@@ -8,18 +8,40 @@ call pathogen#helptags()
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
-set ruler                           " show line and column number
+set ruler                       " show line and column number
 set nu
+
+" https://github.com/skwp/dotfiles/blob/master/vimrc
+
+set history=1000                "Store lots of :cmdline history
+set showcmd                     "Show incomplete cmds down the bottom
+set showmode                    "Show current mode down the bottom
+set gcr=a:blinkon0              "Disable cursor blink
+set visualbell                  "No sounds
+set autoread                    "Reload files changed outside vim
+
+" ================ Turn Off Swap Files ==============
+"
+set noswapfile
+set nobackup
+set nowb
+
+" Display tabs and trailing spaces visually
+set list listchars=tab:\ \ ,trail:·
+
+
 " -------------------------- Solarized Configuration -------------------------
 
 syntax enable
 colorscheme solarized
 
-if has('gui_running')
-	    set background=dark
+" http://serverfault.com/questions/70196/how-to-tell-if-im-in-macvim-in-vimrc
+if has("gui_macvim")
+    set background=dark
 else
-	    set background=light
+    set background=light
 endif
+
 " ------------------------------------------------------------------------------
 
 " ----------------------------- NERDTree  Configuration------------------------
