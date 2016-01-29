@@ -108,4 +108,10 @@ autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,
 " Trim Trailing Whitespace
 autocmd BufWritePre *.py normal m`:%s/\s\+$//e ``
 
+" -----------------------------------------------------------------------------------------------------------------------
+"
+"  ---------------------------------------------Ctags Settings----------------------------------------------------------
+set tags=./tags;/,tags;/,~/.ctags/tags
+
+
 
