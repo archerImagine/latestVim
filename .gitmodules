@@ -16,3 +16,9 @@
 [submodule "bundle/YouCompleteMe"]
 	path = bundle/YouCompleteMe
 	url = ../../Valloric/YouCompleteMe.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = ../../scrooloose/syntastic.git
+[submodule "bundle/python-mode"]
+	path = bundle/python-mode
+	url = ../../klen/python-mode.git
