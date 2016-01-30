@@ -13,3 +13,6 @@
 [submodule "bundle/auto-pairs"]
 	path = bundle/auto-pairs
 	url = ../../jiangmiao/auto-pairs.git
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = ../../Valloric/YouCompleteMe.git
