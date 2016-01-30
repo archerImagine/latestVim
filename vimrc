@@ -119,3 +119,7 @@ set tags=./tags;/,tags;/,~/.ctags/tags
 " http://blog.endpoint.com/2015/02/vim-plugin-spotlight-ctrlp.html
 let mapleader = ","
 map <leader>b :CtrlPBuffer<cr> " Launches the buffer search directly on ,b key.
+
+set exrc
+set secure
+
